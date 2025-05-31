@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Versículo del Día</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        #versiculo {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="versiculo"></div>
+
+    <script>
+        const versiculos = [
+            "Todo lo que hagan, háganlo de corazón, como para el Señor y no para los hombres. - Colosenses 3:23",
+            "Mejor son dos que uno, porque tienen mejor paga por su trabajo. - Eclesiastés 4:9",
+            "Encomienda al Señor tus obras, y tus pensamientos serán afirmados. - Proverbios 16:3",
+            "Los planes bien pensados: ¡pura ganancia! Los planes apresurados: ¡puro fracaso! - Proverbios 21:5",
+            "Porque Dios no es un Dios de desorden, sino de paz. - 1 Corintios 14:33",
+            "El que mucho trabaja siempre tiene en qué trabajar; el perezoso acaba en la pobreza. - Proverbios 14:23"
+        ];
+
+        const aleatorio = Math.floor(Math.random() * versiculos.length);
+        document.getElementById("versiculo").textContent = versiculos[aleatorio];
+    </script>
+</body>
+</html>
